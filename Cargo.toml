@@ -1,0 +1,7 @@
+[package]
+name = "nvim_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nvim-oxi = { version = "0.5.1", features = ["mlua", "neovim-0-10"] }
