@@ -1,9 +1,6 @@
-use nvim_oxi::{
-    Result,
-    api::{
-        self,
-        opts::EchoOpts,
-    }
+use nvim_oxi::api::{
+    self,
+    opts::EchoOpts,
 };
 
 #[nvim_oxi::plugin]
