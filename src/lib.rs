@@ -7,10 +7,10 @@ use nvim_oxi::{
 };
 
 #[nvim_oxi::plugin]
-fn echo() -> Result<()> {
+fn nvim_test() {
     let echo_opts = EchoOpts::default();
     let chunks = [
         ("Hello, from nvim-oxi", Some("Normal"))
     ];
-    Ok(api::echo(chunks, false, &echo_opts)?)
+    let _ = api::echo(chunks, false, &echo_opts);
 }
